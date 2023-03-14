@@ -7,7 +7,7 @@ const app = express();
 
 app.use(express.json());
 
-const PORT = 3001;
+// const PORT = 3001;
 
 app.get('/', (_req, res) => {
   res.status(statusCodes.OK).send('Projeto Trybesmith');
@@ -36,8 +36,8 @@ app.use((err: Error, _req: Request, res: Response, next: NextFunction) => {
 
 app.use(ItemsRoutes);
 
-app.listen(PORT, () => console.log(
-  `Server is running on PORT: ${PORT}`,
-));
+// app.listen(PORT, () => console.log(
+//   `Server is running on PORT: ${PORT}`,
+// ));
 
 export default app;

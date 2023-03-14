@@ -1,15 +1,15 @@
-// // import express from 'express';
-// import app from './app';
-// // import statusCodes from './statusCodes';
+// import express from 'express';
+import app from './app';
+// import statusCodes from './statusCodes';
 
-// // const app = express();
+// const app = express();
 
-// // app.use(express.json());
+// app.use(express.json());
 
-// const PORT = 3001;
+const PORT = 3001;
 
-// const server = app.listen(PORT, () => console.log(
-//   `Server is running on PORT: ${PORT}`,
-// ));
-// //
-// export default server;
+const server = app.listen(PORT, () => console.log(
+  `Server is running on PORT: ${PORT}`,
+));
+//
+export default server;
