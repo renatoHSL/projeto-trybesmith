@@ -3,6 +3,7 @@ import statusCodes from '../statusCodes';
 import 'express-async-errors';
 import ItemsRoutes from './routes/items.routes';
 import UserRoutes from './routes/user.routes';
+import OrderRoutes from './routes/order.routes';
 
 const app = express();
 
@@ -37,6 +38,7 @@ app.use((err: Error, _req: Request, res: Response, next: NextFunction) => {
 
 app.use(ItemsRoutes);
 app.use(UserRoutes);
+app.use(OrderRoutes);
 
 // app.listen(PORT, () => console.log(
 //   `Server is running on PORT: ${PORT}`,
