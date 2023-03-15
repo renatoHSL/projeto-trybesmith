@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import statusCodes from '../../statusCodes';
+// import statusCodes from '../../statusCodes';
 import OrderService from '../services/order.service';
 
 class OrderController {
@@ -7,7 +7,7 @@ class OrderController {
 
   public getAll = async (_req: Request, res: Response) => {
     const orders = await this.orderService.getAll();
-    res.status(statusCodes.OK).json(orders);
+    res.status(200).json(orders);
   };
 }
 
